@@ -1,0 +1,119 @@
+/* General Styles */
+
+
+/* Tema Claro (Default) */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #007bff;
+}
+
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Tema Oscuro */
+
+body.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark-theme a {
+    color: #1e90ff;
+}
+
+body.dark-theme header {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+body.dark-theme nav ul li a {
+    color: #ffffff; /* Cambia el color de los enlaces del menú de navegación */
+}
+
+body.dark-theme footer {
+    background-color: #222222; /* Cambia fondo de footer */
+    color: #ffffff;
+}
+
+body.dark-theme section {
+    background-color: #111111;
+    border: 1px solid #333333;
+}
+
+/* Fin Dark Theme */
+
+/*Responsive Styles*/
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
