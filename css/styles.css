@@ -2,23 +2,70 @@
 
 
 /* Tema Claro (Default) */
+/*a*/
+
 body {
-    font-family: 'Roboto', sans-serif;
+    display: flex;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     color: #007bff;
 }
 
-
 header {
-    position: relative;
-    text-align: center;
-    background-color: #f4f4f4;
+    width: 250px;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #ffffff;
+    color: #000000;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+header nav ul li {
+    margin: 15px 0;
+    color: #000000;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 10px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1e90ff;
+    background-color: #f0f0f0;    
+}
+
+/* Main Content */
+
+main {
+    margin-left: 250px;
     padding: 20px;
+    flex: 1;
 }
 
 #theme-toggle {
@@ -29,39 +76,6 @@ header {
     border: 1px solid #ccc;
     padding: 5px 10px;
     cursor: pointer;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-
-h1, h2 {
-    margin: 10px 0;
-}
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f4f4f4;
 }
 
 /* Tema Oscuro */
@@ -78,11 +92,16 @@ body.dark-theme a {
 body.dark-theme header {
     background-color: #111111;
     color: #ffffff;
-    border: 1px solid #555555;
+    border-right: 1px solid #333;
 }
 
 body.dark-theme nav ul li a {
     color: #ffffff; /* Cambia el color de los enlaces del menú de navegación */
+}
+
+body.dark-theme nav ul li a:hover {
+    color: #1e90ff; /* Cambia el color de los enlaces del menú de navegación */
+    background-color: #333333;
 }
 
 body.dark-theme footer {
@@ -92,10 +111,12 @@ body.dark-theme footer {
 
 body.dark-theme section {
     background-color: #111111;
-    border: 1px solid #333333;
 }
 
 /* Fin Dark Theme */
+
+/* Reglas Globales */
+
 
 /*Responsive Styles*/
 
