@@ -3,57 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio Profesional de un Ingeniero en Informática. Descubre mis proyectos, habilidades y experiencia.">
     <title>Mi Portafolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"">
 </head>
 <body>
-    <!--HEADER-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-        <h1>Bienvenido a Mi Portafolio</h1>
-        <p>Ingeniero en Informática | Desarrollador de Software</p>
-    </header>
-
-    <!--Sobre Mi-->
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto y los resultados obtenidos.</p>
+    <main>
+        <!-- Ventana: Perfil -->
+        <div class="window profile">
+            <div class="window-header">
+                <span class="window-title">Perfil</span>
+                <div class="window-controls">
+                    <button class="close"></button>
+                    <button class="minimize"></button>
+                    <button class="maximize"></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="profile">
+                    <div class="profile-pic-container">
+                        <img src="images/pic.jpg" alt="Foto de Perfil" class="profile-pic">
+                        <h2>Joel Medina Morales</h2>
+                        <p>Ingeniero en Informática | Desarrollador de Software</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:miemail@example.com">Email</a>
+                        <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto y los resultados obtenidos.</p>
-    </section>
+    
+        <!-- Ventana: Sobre Mí -->
+        <div class="window about">
+            <div class="window-header">
+                <span class="window-title">Sobre Mí</span>
+                <div class="window-controls">
+                    <button class="close"></button>
+                    <button class="minimize"></button>
+                    <button class="maximize"></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h3>Educación:</h3>
+                <ul>
+                    <li>Ingeniería en Informática - Instituto Profesional Duoc UC 2022-2026</li>
+                    <li>Certificación en:
+                        <dt>
+                            <dt>Análisis y Desarrollo de Modelo de Datos.</dt>
+                            <dt>- Calidad de Software.</dt>
+                            <dt>- Programación de Software.</dt>
+                            <dt>- Análisis y Planificación de Requerimientos Informáticos.</dt>
+                            <dt>- EF Certificate C1</dt>
+                        </dt>
+                    </li>
+                </ul>
+                <section class="technologies">
+                    <div class="technology-category">
+                        <h4>Lenguajes:</h4>
+                        <div class="technology-grid">
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-Python.png" alt="Python" class="tech-logo">
+                                <span>Python</span>
+                            </div>
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-JavaScript.png" alt="JavaScript" class="tech-logo">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-Java.png" alt="Java" class="tech-logo">
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="technology-category">
+                        <h4>Conocimientos:</h4>
+                        <div class="technology-grid">
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-HTML5.png" alt="HTML5" class="tech-logo">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-CSS.png" alt="CSS" class="tech-logo">
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="technology-category">
+                        <h4>Frameworks:</h4>
+                        <div class="technology-grid">
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-Node.png" alt="Node.js" class="tech-logo">
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="technology-category">
+                        <h4>Herramientas:</h4>
+                        <div class="technology-grid">
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-Git.png" alt="Git" class="tech-logo">
+                                <span>Git</span>
+                            </div>
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-VSCode.png" alt="VSCode" class="tech-logo">
+                                <span>VSCode</span>
+                            </div>
+                            <div class="technology-item">
+                                <img src="images/sprites/Sprite-Trello.png" alt="Trello" class="tech-logo">
+                                <span>Trello</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-    <!--Habilidades-->
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Lenguajes de Programación: Python, JavaScript, Java</li>
-            <li>Frameworks: Node.js</li>
-            <li>Herramientas: Git, VSCode</li>
-        </ul>
-    </section>
+        <!--Ventana: Proyectos -->
+        <div class="window projects">
+            <div class="window-header">
+                <span class="window-title">Proyectos</span>
+                <div class="window-controls">
+                    <button class="close"></button>
+                    <button class="minimize"></button>
+                    <button class="maximize"></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="project-grid">
+                    <!--PROYECTO 1-->
+                    <div class="project-card">
+                        <img src="#" alt="Proyecto 1" class="proyect-thumb">
+                        <h4>Proyecto </h4>
+                        <p>descripción proyecto</p>
+                        <p><strong>tecnologías usadas:</strong></p>
+                        <a href="#" target="_blank" class="project-link">Ver más</a>
+                    </div>
 
-    <!--Contacto-->
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: miemail@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario">linkedin.com/in/tuusuario</a></p>
-    </section>
+                    <!--PROYECTO 2-->
+                    <div class="project-card">
+                        <img src="#" alt="Proyecto 2" class="proyect-thumb">
+                        <h4>Proyecto </h4>
+                        <p>descripción proyecto</p>
+                        <p><strong>tecnologías usadas:</strong></p>
+                        <a href="#" target="_blank" class="project-link">Ver más</a>
+                    </div>
 
-    <!--Footer-->
-    <footer>
-        <p>&copy; 2025 Joel Medina Morales. Todos los derechos reservados.</p>
-    </footer>
+                    <!--PROYECTO 3-->
+                    <div class="project-card">
+                        <img src="#" alt="Proyecto 3" class="proyect-thumb">
+                        <h4>Proyecto </h4>
+                        <p>descripción proyecto</p>
+                        <p><strong>tecnologías usadas:</strong></p>
+                        <a href="#" target="_blank" class="project-link">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>

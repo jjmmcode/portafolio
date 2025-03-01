@@ -1,0 +1,342 @@
+/* General Styles */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #fff;
+    display: flex; /* Alineación horizontal */
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+    background: url('../images/sprites/descargar.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Contenedor principal */
+main {
+    display: flex; /* Alineación en fila */
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-start; /* Alinea ventanas al inicio vertical */
+    gap: 20px; /* Espaciado entre las ventanas */
+    width: 90%; /* Limita el ancho total */
+    max-width: 1200px; /* Máximo ancho */
+}
+
+/* Ventana de Perfil (alargada hacia abajo) */
+.window.profile {
+    height: 500px; /* Más alta */
+    width: 250px; /* Más estrecha */
+    border: 4px solid #fff;
+    background-color: #222;
+    box-shadow: 5px 5px 0 #555;
+}
+
+/* Ventana de Descripción (más ancha) */
+.window.about {
+    height: auto; /* Altura se adapta al contenido */
+    width: 600px; /* Más ancha */
+    border: 4px solid #fff;
+    background-color: #222;
+    box-shadow: 5px 5px 0 #555;
+    
+}
+
+/* Encabezado de las ventanas */
+.window-header {
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.window-title {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+/* Botones de las ventanas */
+.window-controls button {
+    width: 12px;
+    height: 12px;
+    background-color: #ff5555;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.window-controls button.minimize {
+    background-color: #ffb86c;
+}
+
+.window-controls button.maximize {
+    background-color: #50fa7b;
+}
+
+/* Contenido de las ventanas */
+.window-content {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.window:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+/*Ventana Proyectos*/
+.window.projects {
+    width: 600px;
+    height: auto;
+    border: 4px solid #fff;
+    background-color: #222;
+    box-shadow: 5px 5px 0 #555;
+    margin-top: 20px;
+}
+
+.window.projects:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/*Tarjetas de Proyectos*/
+
+.project-card {
+    background-color: #333;
+    border: 2px solid #fff;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 0 #555;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0 #fff;
+}
+
+/*Miniaturas*/
+
+.project-thumb {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+/*Titulos y descripción*/
+
+.project-card h4 {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    font-size: 12px;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+/*Botón ver más*/
+
+.project-link {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #50fa7b;
+}
+
+ul li [class^="sprite-"] {
+    list-style: none;
+    padding-left: 30px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-bottom: 10px;
+}
+
+/* HTML5 */
+
+.sprite-html5 {
+    background-image: url('../images/sprites/Sprite-HTML5.png');
+}
+
+/* CSS */
+
+.sprite-css {
+    background-image: url('../images/sprites/Sprite-CSS.png');
+}
+
+/* Python */
+
+.sprite-python {
+    background-image: url('../images/sprites/Sprite-Python.png');
+}
+
+/* JavaScript */
+
+.sprite-javascript {
+    background-image: url('../images/sprites/Sprite-JavaScript.png');
+}
+
+/* Java */
+
+.sprite-java {
+    background-image: url('../images/sprites/Sprite-Java.png');
+}
+
+/* Node */
+
+.sprite-node {
+    background-image: url('../images/sprites/Sprite-Node.png');
+}
+
+/* Git */
+.sprite-git {
+    background-image: url('../images/sprites/Sprite-Git.png');
+}
+
+/* VSCode */
+
+.sprite-vscode {
+    background-image: url('../images/sprites/Sprite-VSCode.png');
+}
+
+/* Trello */
+
+.sprite-trello {
+    background-image: url('../images/sprites/Sprite-Trello.png');
+}
+
+/* Estilos del perfil */
+
+.profile-pic-container {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff; 
+    object-fit: cover;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #50fa7b;
+}
+
+/* Tecnologías */
+
+.technologies {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.technology-category {
+    margin-bottom: 30px;
+}
+
+.technology-category h4 {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.technology-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los ítems */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila si es necesario */
+}
+
+.technology-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tech-logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+.technology-item span {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Responsive Styles */
+
+/* Ajustes para pantallas pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra las ventanas */
+    }
+
+    .window.profile, .window.about {
+        width: 90%; /* Ocupa casi todo el ancho */
+        height: auto; /* Altura se ajusta automáticamente */
+    }
+
+    .window.profile {
+        margin-bottom: 20px; /* Espaciado entre ventanas */
+    }
+
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+}
